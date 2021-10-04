@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target.textContent === 'Сделать пожертвование') {
         data.forEach(elem => {
           if (elem.id === target.id) {
-            console.log(elem);
             creatingPopupBlock(elem);
           }
         });
