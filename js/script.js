@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return data;
   };
 
-  const creatingPopup = (elem) => {
+  const creatingPopupBlock = (elem) => {
     const section = document.createElement('section');
     section.classList.add('modal');
     section.style.display = 'flex';
@@ -91,8 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target.textContent === 'Сделать пожертвование') {
         data.forEach(elem => {
           if (elem.id === target.id) {
-            console.log(elem);
-            creatingPopup(elem);
+            creatingPopupBlock(elem);
           }
         });
       }
